@@ -8,6 +8,8 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
+     
+
     axios.get("https://zerodha-backend-pho2.onrender.com/newOrder").then((res) => {
       // console.log(res.data);
       setOrders(res.data);
