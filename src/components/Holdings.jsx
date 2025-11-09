@@ -6,6 +6,8 @@ import "./index.css"
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
+
+
   useEffect(() => {
     axios.get("https://zerodha-backend-pho2.onrender.com/allHoldings").then((res) => { // backend url
       // console.log(res.data);
