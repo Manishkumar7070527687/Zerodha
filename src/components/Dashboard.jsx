@@ -11,6 +11,7 @@
   import WatchList from "./WatchList";
   import { GeneralContextProvider } from "./GeneralContext";
   import { useEffect } from "react";
+  import NotFound from "../NotFound";
   import axios from"axios"
   const Dashboard = () => {
     useEffect(()=>{
@@ -40,6 +41,8 @@
             <Route path="/positions" element={<Positions />} />
             <Route path="/funds" element={<Funds />} />
             <Route path="/apps" element={<Apps />} />
+
+            <Route path="*" element={<NotFound/>}/>
           </Routes>
         </div>
       </div>
